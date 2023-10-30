@@ -12,12 +12,12 @@
 
 .info {
   vertical-align: middle;
-  display: inline-block;
+  display: flex;
 }
 
 .call {
   color: #ffffff;
-  display: inline-block;
+  display: flex;
   padding-left: 150px;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .topbar .call p {
-  display: inline-block;
+  display: flex;
   vertical-align: middle;
   font-size: 16px;
   line-height: 24px;
@@ -35,7 +35,7 @@
 
 .mail {
   color: #ffffff;
-  display: inline-block;
+  display: flex;
   padding-left: 25px;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .social {
-  display: inline-block;
+  display: flex;
   vertical-align: middle;
   margin-left: calc(100vw - 850px);
   padding-left: calc(100% - 1325px);
@@ -107,8 +107,12 @@
 .menu {
   vertical-align: middle;
   text-align: center;
-  left: calc(100vw - 554.89px);
+  /*left: calc(100vw - 554.89px);*/
   padding-left: calc(100vw / 12);
+  align-content: center;
+  width: 435.611px;
+  height: 32px;
+  flex-shrink: 0;
 }
 
 .menu a {
@@ -128,17 +132,26 @@
 }
 
 .reservation {
-  text-decoration: none;
-  color: #182226;
-  line-height: 32px;
-  font-size: 16px;
-  border: 1.5px #182226 solid;
+  /*
   margin-left: calc(100vw - 1300px);
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 12px;
   padding-bottom: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;*/
+  text-decoration: none;
+  color: #182226;
+  line-height: 32px;
+  font-size: 16px;
+  border: 1.5px #182226 solid;
   border-radius: 118px;
+  display: inline-flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .hero h1 {
